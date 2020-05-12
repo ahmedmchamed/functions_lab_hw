@@ -72,7 +72,7 @@ class FunctionsTest < MiniTest::Test
         assert_equal( "Oct", tenth_month_string )
     end
     #   #Further
-      #Given the length of a side of a cube calculate the volume
+    #Given the length of a side of a cube calculate the volume
     def test_volume_of_cube()
         volume_of_cube_result = volume_of_cube(5)
         assert_equal(125, volume_of_cube_result)
@@ -89,6 +89,4 @@ class FunctionsTest < MiniTest::Test
         temperature_conversion_result = fahrenheit_to_celsius(5)
         assert_equal(-15, temperature_conversion_result)
     end
-      
-   
 end

@@ -40,23 +40,27 @@ def number_to_full_month_name(month_number)
         return "January"
     when 3
         return "March"
+    when 4
+        return "April"
     when 9
         return "September"
+    when 10
+        return "October"
     else
-        return "Nope."
+        return "Invalid input."
     end
 end
 
 def number_to_short_month_name(month_number)
     case month_number
     when 1
-        return "Jan"
+        return number_to_full_month_name(month_number)[0..2]
     when 4
-        return "Apr"
+        return number_to_full_month_name(month_number)[0..2]
     when 10
-        return "Oct"
+        return number_to_full_month_name(month_number)[0..2]
     else
-        return "Nope."
+        return "Invalid input."
     end
 end
 
